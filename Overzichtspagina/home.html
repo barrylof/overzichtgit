@@ -1,43 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>overzichtspagina</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 </head>
 
-<body>
+<body id="bodyhome">
     <header>
+        <img src="images/logo_mobiel.png" alt="logo naar home" id="logo">
         <h1>99 verhalen voor jou</h1>
         <nav>
-            <a href="inlog.html"><img src="images/accounticon.png" alt="accounticont"></a>
+            <form>
+                <label> 
+                  <input type="text">
+                </label>
+                <label><input type=submit value="zoeken">
+                </label>
+            </form>
+            <button type="button">filter</button><img src="images/filter.png" alt="filtericoon">
+            <a href="favorieten.html">favorieten</a> <img src="images/favourites.png" alt="favorietenicoon">
+            <a href="inlog.html">inloggen</a><img src="images/account.png" alt="accounticoon">
         </nav>
     </header>
-    <button type="button">
-           <img src="images/searchicon.png" alt="searchicon">
-       </button>
-    <p>filter op:</p>
-    <ul>
-        <li><button type="button">gevoel</button></li>
-        <li><button type="button">visuals</button></li>
-        <li><button type="button">schrijfstijl</button></li>
-        <li><button type="button">leestijd</button></li>
-    </ul>
-    <button type="button"><img src="images/reset.png" alt="reset button"> reset filters</button>
-    <button type="button"><img src="images/random.png" alt="random button"></button>
-    <h2> populaire verhalen</h2>
+    <main>
+        <form>
+           <fieldset>
+            <legend>Leestijd</legend>
+              <input type="range"  list="tickmarks">
+              <datalist id="tickmarks">
+                      <option value="0" label="<5min">
+                      <option value="25"></option>
+                      <option value="50" label="5-10min">
+                      <option value="75">
+                      <option value="100" label="10-15min">
+              </datalist>
+            
+            </fieldset>
+            <fieldset>
+                <legend> visueel:</legend>
+                <label><input type="checkbox">licht</label>
+                <label><input type="checkbox">donker</label>
+                <label><input type="checkbox">kleurrijk</label>
+                <label><input type="checkbox">dynamisch</label>
+            </fieldset>
+            <fieldset>
+                <legend>gevoel</legend>
+                <label><input type="checkbox">vrolijk</label>
+                <label><input type="checkbox">duister</label>
+                <label><input type="checkbox">komisch</label>
+                <label><input type="checkbox">zweverig</label>
+            </fieldset>
+            <fieldset>
+                <legend>schrijfstijl</legend>
+                <label><input type="checkbox">grof</label>
+                <label><input type="checkbox">formeel</label>
+                <label><input type="checkbox">poëtisch</label>
+                <label><input type="checkbox">abstract</label>
+            </fieldset>
+            <input type="submit" value="toepassen">
+            <input type="reset" value="reset">
+        </form>
 
-    <section>
-        <h3> Eric Lucassen - Molovic</h3>
-        <p>20.654 keer gelezen</p>
-    </section>
-    <section>
-        <h3> Stoned - Molovic</h3>
-        <p>16.524 keer gelezen</p>
-    </section>
+        <section>
+            <h2>De 10 meest gelezen verhalen</h2>
+            <article>
+                <h3>Stoned - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de atmosfeer in. Het</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1074x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~8 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.8/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Western - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp. Een tumbleweed tuimelt over het zanderige plein. Het bord van de verlaten saloon piept in de wind die me voortjaagt naar de Public Library. Het</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1073x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~5 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.7/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Vrijdag de dertiende - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit. Terwijl ik de kinderwagen waarin mijn zoon ligt te krijsen vasthoudt, ren ik mee met de bus en schreeuw ik naar de buschauffeur dat hij moet stoppen. Maar hij</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1054x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~6 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.4/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Neerslachtig - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Ach en wee, ik stap de bus uit. Mijn zoon – in wat voor wereld heb ik die jongen neergezet – ligt vredig in zijn wagentje te slapen, vrij van kwade gedachten. Het regent en waait en dat is maar goed ook. Beter weer zou ongepast zijn. Het</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1016x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~5 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.4/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Jules Deelder - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Kijk… daaro dan… aan de overkant… wat daar uit dat bussie komp stappe? Zie je da, da ongewasse baardkonijn achter da gifgroene babykarretje? Max Molovich… ja hoor, het is ’m… met z’n graftakkesmoelwerk… onmiskenbaar…looptlekker de pleurisintellectueel uit te hange</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1032x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~6 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.8/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Sportcommentaar - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein. De deuren gaat open, de spanning is te snijden. En wie komt daar als eerste uit? Ja hoor, het is de felgroene kinderwagen waarin Molovich Jr. ligt te slapen, op de voet</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>994x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~4 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.1/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Leon de Winter - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>De wind en de regen deden hun verwoestende werk toen ik, met voor mij in zijn kinderwagen onze slapende zoon, onze lieve, dappere Moos, de bus uitstapte. De donkere wolken die boven Amsterdam samenpakten, weerspiegelden de moeilijke tijd waarin onze samenleving</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1000x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~5 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.2/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Regionaal dagblad - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>De klok slaat twaalf uur in de middag als de beruchte blogger Max J. Molovich op het Stationsplein uit het gemeenteblik stapt. Zijn zoon ligt eindelijk in de armen van Morpheus. Burgers en buitenlui berijden de benenwagen van en naar het station. De</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1001x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~5 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.2/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>De Passie van Max - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Ik klamp me vast aan het wagentje van mijn zoon. Hij slaapt. De busrit heb ik overleefd. Het is rond het middaguur, de mensen lopen langs ons heen, zonder ons op te merken. Niemand steekt een hand uit. Ik sleep me voort. De pijn zo goed als mogelijk</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1004x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~8 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.7/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Paranoia - M.Molovich </h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven m’n hoofd hangt: HIER LOOPT HIJ!</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1076x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~5 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p> 4.1/5</p>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <h2>10 Snelle snacks</h2>
+            <article>
+                <h3>haiku - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Op zoek naar een boek Een vrouw vraagt de weg en ik Koop babyschoentjes</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>1001x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~1 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>3.8/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>(Song) Je vindt nooit wat je zoekt - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>George Little River – Je vindt nooit wat je zoekt Je vindt nooit wat je zoekt (Muziek: George L. River, tekst: Max J. Molovich Ik stap uit de bus, samen met m’n zoon</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>34x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~2 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>3.9/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Heroïsch vers - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>De bus stopt voor Centraal, z’n zoon slaapt in z’n armen De regen plenst hem nat, de wind jankt langs zijn oor Een drilboor drilt, een heipaal heit, een bouwput zucht Hij zoekt naar wat hij reeds een week of wat niet vindt</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>346x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~3 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>4.0/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Acrostichon(2) - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Ronkend en zuchtend komt de bus tot stilstand Amsterdam Centraal, stationsplein, mijn bloedeigen Y-chromosoompje slaapt in zijn mobiele mand</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>346x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~2 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>4.2/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Acrostichon(1) - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Stationsplein. Ik stap uit de bus, mijn zoontje slaapt Twaalf uur, het weer druilt, een meeuw lacht, een hond gaapt IJlings loop ik langs de troosteloze bouwputten Langs een man die met z’n lunchbox loopt te</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>347x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~2 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>4.2/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Letterlijk - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Rond 12.00 uur stap ik uit de bus, die er letterlijk acht uur over heeft gedaan. Op het plein van Amsterdam Centraal. De regen geselt letterlijk mijn gezicht. Ik duw het wagentje voort waarin mijn zoontje ligt te</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>623x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~3 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>4.6/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Alliteratie - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>De bonkende bus komt stutterend tot stilstand. Ik stap strompelend uit op het plensnatte plein. Het is een gure, grauwe, grijze, doodse dag. De wind waait striemende stralen reinigende regen in mijn gezette gezicht. Mijn</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>782x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~3 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>4.1/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Flaptekst - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>In het weergaloze Stijloefeningen verhaalt Max J. Molovich op 99 verschillende manieren over zijn tocht naar de Openbare Bibliotheek Amsterdam in de hoop Stijloefeningen van Raymond Queneau</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>792x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~2 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>4.6/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Iphone - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Om een uur of 12 stapte ik op CS bus 21 uitomdat ik naar de Ipenbare Bibliotheek op weg was, waar ik Stijloefeningen van Q-No wilde lenen. Was ik al een tijdje naar op zoek. Kutweer’ dat het was. En een</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>492x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~2 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>3.6/5</p>
+                </footer>
+            </article>
+            <article>
+                <h3>Mop - M.Molovich</h3>
+                <img src="images/Albumcover1.1.png" alt="plaatje">
+                <p>Ken je die mop van die man die met bus 21 naar het Centraal Station van Amsterdam ging, langs de diverse bouwputten liep richting de Openbare Bibliotheek om daar Stijloefeningen van Raymond</p>
+                <footer>
+                    <img src="images/gelezenlogo.png" alt="gelezenicoon">
+                    <p>892x gelezen</p>
+                    <img src="images/leestijdlogo.png" alt="leestijdicoon">
+                    <p>~1 min</p>
+                    <img src="images/ratinglogo.png" alt="ratinglogo">
+                    <p>4.0/5</p>
+                </footer>
+            </article>
+        </section>
 
-
+    </main>
 </body>
 
 </html>

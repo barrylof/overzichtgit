@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>inlogpagina</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 </head>
 
 <body>
     <header>
+        <img src="images/logo.png" alt="logo naar home" id="logo">
         <h1>inlogpagina</h1>
+        <nav>
+            <a href="home.html">terug</a>
+        </nav>
     </header>
-    <nav>
-        <a href="home.html">terug</a>
-    </nav>
+
     <h3>inloggen</h3>
     <form action="action_inlog.php">
-        <input type="text" placeholder="gebruikersnaam" id="gebnaam" required>
-        <input type="password" placeholder="wachtwoord" id="wawoord" required>
-        <input type="submit" value="log in">
-
+        <label> Email adres
+        <input type="email" placeholder="bijv. iemand@netwerk.com" id="email" required>
+        </label>
+        <label>Wachtwoord
+        <input type="password"  id="wawoord" required>
+        </label>
+        <button type="button">log in </button>
     </form>
     <h3>Of moet u zich nog aanmelden?</h3>
     <form>
-        <input type="text" placeholder="voornaam" id="vornam" required>
-        <input type="text" placeholder="achternaam" id="achnam" required>
-        <input type="email" placeholder="emailadres" id="mailadres" required>
-        <input type="password" placeholder="wachtwoord" id="wwaanmeld" required>
-        <input type="password" placeholder="bevestig wachtwoord" id="bevestig" required>
+       <label>Email adres <input type="email" placeholder="bijv. iemand@netwerk.com" id="mailadres" required></label>
+       <label>Wachtwoord <input type="password" id="wwaanmeld" required></label>
+        <label>Bevestig wachtwoord<input type="password" id="bevestig" required></label>
         <input type="submit" value="aanmelden">
     </form>
 </body>
