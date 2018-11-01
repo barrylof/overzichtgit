@@ -1,0 +1,572 @@
+/*/////////////////////////////////////////////////////////body en header/nav//////////////////////////*/
+
+@font-face {
+    font-family: "nexa";
+    src: url("../fonts/NexaBold.otf") format("otf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*#bodyhome {*/
+
+h1 {
+    font-family: "Nexa";
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-left: 1rem;
+    margin-top: 0;
+    
+}
+
+header [type=button] img {
+    height: 2.5em;
+}
+
+body {
+    font-family: "nexa";
+    margin: 0;
+}
+
+header {
+    border-radius: 10px;
+    padding-bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav img {
+    max-height: 1.5rem;
+    margin-right: 0.5em;
+}
+
+nav>img:first-of-type {
+    height: 3em;
+    max-height: 2em;
+    margin-right: auto;
+}
+
+nav {
+    font-weight: bold;
+    display: flex;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    background-color: white;
+    width: 100%;
+}
+nav a:nth-of-type(1) {
+    margin-right: auto;
+    
+}
+
+nav a,
+nav button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: "nexa";
+    margin-left: 0.5em;
+    margin-right: 0.5;
+    color: #554c99;
+}
+
+nav button {
+    border: none;
+    background-color: transparent;
+    font-family: "nexa";
+    font-size: 1em;
+    font-weight: bold;
+    color: #554c99;
+}
+
+[type=search] {
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    height: 40px;
+    display: none;
+}
+
+label {
+    font-family: "nexa";
+}
+
+nav [type=submit] {
+    border-style: none;
+    background-color: #FF3268;
+    border-radius: 20px;
+    color: white;
+    font-family: "nexa";
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    height: 40px;
+    display: none;
+}
+
+
+.hideDbutton {
+    visibility: hidden;
+
+}
+ section div [type=image].showbar{
+    visibility: visible;
+}
+section [type=image]{
+background-color: transparent;
+    border: none;
+    max-width: 3em;
+    display: flex;
+    margin-left: 85%;
+    z-index: 1000;
+    position: absolute;
+    top: 9em;
+
+}
+
+section div [type=image]{
+    visibility: hidden;
+}
+
+.lappie, .tablet {
+    display: none;
+}
+/*////////////////////////////////////////////////////////////artikelen en main*/
+
+section {
+    background-color: #00d66c;
+    width: 100%;
+  
+}
+
+@media screen and (min-width: 44rem) {
+    section {}
+    nav h1 {
+        display: inline;
+        margin: 0;
+        margin-right: auto;
+    }
+    .mobiel, .lappie {
+        display: none;
+    }
+    .tablet {
+        display: flex;
+        align-self: center;
+            
+    }
+    
+}
+
+@media screen and (min-width: 65rem) {
+    section {}
+    section h2 {
+        grid-column: span 3;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    section {}
+    .tablet, .mobiel{
+        display: none;
+    }
+    .lappie{
+        display: flex;
+    }
+}
+
+h2 {
+    display: none;
+}
+
+footer p {
+    display: inline;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    max-height: 1em;
+    margin-left: 1em;
+}
+
+main {}
+
+section:first-of-type {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+section:nth-of-type(2) {
+    display: flex;
+    background-color: #9EC9CC;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section:nth-of-type(2) img:first-of-type {
+max-width: 100%;
+}
+
+section:nth-of-type(3) {
+    display: flex;
+    background-color: #9EC9CC;
+    /*    height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-of-type(3) article {
+    display: flex;
+    background-color: #9EC9CC;
+    /*    height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section:nth-of-type(3) {
+    height: 100vh
+}
+
+section:nth-of-type(3) article img:nth-last-of-type(1) {
+    width: 20rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    position: absolute;
+    top: 1em;
+    left:1em;
+}
+
+section:nth-of-type(3) article img:nth-last-of-type(2) {
+    width: 20rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: absolute;
+    top: 4em;
+    right: 1em;
+   
+}
+
+section:nth-of-type(3) article img:nth-last-of-type(3) {
+    width: 40rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+    position: absolute;
+    top: 2em;
+    right: 1em;
+}
+
+section:nth-of-type(3) article p {
+    width: 30rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "J. Airplane swash"
+}
+
+
+
+
+section:nth-of-type(4) {
+    display: flex;
+    background-color: black;
+        height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-of-type(4) article img {
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+    width: 30rem;
+    position:absolute;
+    z-index: 1;
+    
+}
+
+section:nth-of-type(4) article p {
+    width: 30rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "J. Airplane swash"
+}
+section:nth-of-type(4) article  {
+position: relative;
+    
+}
+
+
+
+
+
+
+section:nth-of-type(5) {
+    display: flex;
+    background-color: #9EC9CC;
+        height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-of-type(5) article p{
+    display: flex;
+    width:30em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "J. Airplane swash"
+}
+section:nth-of-type(5) article  {
+position: relative;
+    
+}
+section:nth-of-type(5) article img:nth-of-type(1){
+    display: flex;
+    width:5em;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-of-type(5) article img:nth-of-type(2){
+    display: flex;
+    width:5em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+section:nth-of-type(6){
+    height: 150vh;
+}
+
+section:nth-of-type(6) {
+    display: flex;
+    background-color: #E5E474;
+/*        height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+}
+section:nth-of-type(6) article img{
+    display: flex;
+    /*    height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+section:nth-of-type(6) article p{
+    display: flex;
+    width: 30em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "J. Airplane swash";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section:nth-of-type(7) {
+    display: flex;
+    background-color: #57C7D7;
+        height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-of-type(7) article img{
+    display: flex;
+    /*    height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+section:nth-of-type(7) article p{
+    display: flex;
+    width: 30em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "J. Airplane swash";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+section:nth-of-type(8) {
+    display: flex;
+    background-color: #3A0D3E;
+        height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-of-type(8) article img{
+    display: flex;
+    /*    height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+    width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+}
+section:nth-of-type(8) article p{
+    display: flex;
+    width: 30em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "J. Airplane swash";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+section:nth-of-type(9) {
+    display: flex;
+    background-color: #9EC9CC;
+    /*    height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+}section:nth-of-type(9) article img{
+    display: flex;
+    /*    height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+    width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+}
+section:nth-of-type(9) article p{
+    display: flex;
+    width: 30em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "J. Airplane swash";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+section:last-of-type footer h3 {
+    color: white;
+    font-size: 2em;
+    margin-top: -1em;
+    text-align: center;
+    
+}
+
+section:last-of-type footer img:last-of-type{
+    width: 3em;
+    max-height: 10em;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section:last-of-type footer div {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 6em;
+}
+
+embed{
+    margin-bottom: -5px;
+  
+}
+
+
+
+/*///////////////deze code heb ik ik van https://help.issuu.com/hc/en-us/articles/115000631608-Resizing-Embeds-To-Be-Responsive overgenomen want zelf kreeg ik hem niet responsive////////////*/
+
+.embje {
+
+  position: relative;
+
+  padding-bottom: 56.25%; /* set the aspect ratio here as (height / width) * 100% */
+
+  height: 0;
+
+  overflow: hidden;
+
+  max-width: 100%;
+
+}
+.embje iframe {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+}

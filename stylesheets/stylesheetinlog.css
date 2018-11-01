@@ -1,0 +1,255 @@
+/*/////////////////////////////////////////////////////////body en header/nav//////////////////////////*/
+
+* {
+    box-sizing: border-box;
+}
+
+#bodyhome {
+    background-image: url(../images/background3.jpeg);
+    background-position: top;
+    background-size: 300%;
+    background-repeat: no-repeat;
+}
+
+nav h1 {
+    display: none;
+}
+
+
+
+h1 {
+    font-family: "Nexa";
+    font-size: 1.6em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #00d66c;
+    /*    text-align: center;*/
+}
+
+
+header [type=button] img {
+    height: 2.5em;
+}
+
+body {
+    font-family: "nexa";
+    margin: 0;
+    background-color: #00d66c;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    /*    background-color: white;*/
+    border-radius: 10px;
+    /*    opacity: 0.7;*/
+    padding-bottom: 0.2em;
+    text-align: center;
+    /*    display: flex;*/
+    /*    align-items: flex-start;*/
+    /*    flex-wrap: wrap;*/
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav img {
+    max-height: 1.5rem;
+    margin-right: 0.5em;
+}
+
+nav>img:first-of-type {
+    height: 3em;
+    max-height: 2em;
+    margin-right: auto;
+}
+
+nav {
+    font-weight: bold;
+    /*    margin-top: 0.5em;*/
+    display: flex;
+    padding: 0.5em;
+    background-color: white;
+    /*    border-radius: 10px;*/
+    width: 100%;
+}
+
+nav a,
+nav button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "nexa";
+    margin-left: 0.5em;
+    margin-right: 0.5;
+    color: #554c99;
+}
+
+nav>a:first-of-type {
+    margin-right: auto;
+}
+
+main a {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-family: "nexa";
+    font-size: 1em;
+    /*    margin-left: 0.5em;*/
+    font-weight: bold;
+    color: #554c99;
+}
+
+[type=search] {
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    height: 40px;
+    display: none;
+}
+
+[type=email],
+[type=password] {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    height: 3em;
+    width: 70%;
+    margin-right: auto;
+    margin-bottom: 2em;
+    font-family: "nexa";
+    padding-left: 0.5em;
+    font-weight: bold;
+}
+
+nav [type=submit] {
+    border-style: none;
+    background-color: #FF3268;
+    border-radius: 20px;
+    color: white;
+    font-family: "nexa";
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    height: 40px;
+    display: none;
+}
+
+
+/*///////////////////////////////////////////////////////////filter en main/////////////////////////////////*/
+
+main form {
+    max-width: 25em;
+    /*    margin-left: auto;*/
+    margin-right: auto;
+    display: block;
+}
+
+main label {
+    background-color: white;
+    display: block;
+    font-family: "nexa";
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+
+
+
+article a>img:last-of-type {
+    border-radius: 0 0 10px 10px;
+}
+
+main [type=submit] {
+    border: none;
+    background-color: rgba(255, 50, 104, 1);
+    color: white;
+    font-family: "nexa";
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 3em;
+    min-height: 40px;
+    font-weight: bold;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: block;
+}
+
+
+/*////////////////////////////////////////////////////////////artikelen en main*/
+
+@media screen and (min-width: 44rem) {
+    main section {
+        background-color: white;
+        border-radius: 10px;
+    }
+    main section:nth-child(2) {
+        display: inline;
+        background-color: lightgrey;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 22em);
+        grid-gap: 1em;
+        width: 41em;
+    }
+    main section:nth-child(2) label {
+        background-color: lightgrey;
+    }
+    main section:nth-child(2) [type=submit]{
+        background-color:#554c99; 
+    }
+}
+h3 {
+    color: #554c99;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+section {
+    padding: 1em;
+}
+
+section:nth-child(2) {
+    display: none;
+}
+
+section:first-of-type p {
+    margin-bottom: 2em;
+    display: inline;
+}
+[type=email], [type=password] {
+    background-color: #00d66c;
+    transition: 1s;
+}
+input:not([type=submit]):invalid{
+    background-color: white;
+}
+
+form:focus{
+    
+}

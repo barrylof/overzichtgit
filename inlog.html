@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>inlogpagina</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheetinlog.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <a href="index.html"><img src="images/iconen/transaviaicon.png" alt="logo naar home" id="logo"></a>
+
+            <button type="button"><img src="images/iconen/zoeken.png" alt="filtericoon">zoeken </button>
+            <a href="bibliotheek.html"><img src="images/iconen/bibliotheek.png" alt="favorietenicoon">bibliotheek </a>
+            <a href="inlog.html"><img src="images/iconen/account.png" alt="accounticoon">inloggen </a>
+            <form>
+                <label> 
+                  <input type="search">
+                </label>
+                <label><input type=submit value="zoeken">
+                </label>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>inloggen</h3>
+            <p> Vul je e-mailadres en wachtwoord in om in te loggen</p>
+            <form action="action_inlog.php">
+                <label> E-mail adres
+        <input type="email" placeholder="gebruiker@domein.nl" id="email" required>
+        </label>
+                <label>Wachtwoord
+        <input type="password"  id="wawoord" required>
+        </label>
+                <a href="home.html">wachtwoord vergeten?</a>
+
+                <button type="submit">log in </button>
+            </form>
+            <p> Heb je nog geen account?</p>
+            <a href="home.html">Meld je nu aan! </a>
+        </section>
+        <section>
+            <h3>Of moet u zich nog aanmelden?</h3>
+            <form>
+                <label>Email adres <input type="email" placeholder="gebruiker@domein.nl" id="mailadres" required></label>
+                <label>Wachtwoord <input type="password" id="wwaanmeld" required></label>
+                <label>Bevestig wachtwoord<input type="password" id="bevestig" required></label>
+                <input type="submit" value="aanmelden">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
