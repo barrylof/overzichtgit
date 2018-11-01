@@ -250,6 +250,9 @@ input:not([type=submit]):invalid{
     background-color: white;
 }
 
-form:focus{
-    
+
+[type=email]:focus, [type=password]:focus {
+width: 22em;
+    transition: 1s;
 }
+

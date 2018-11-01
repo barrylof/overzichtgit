@@ -390,11 +390,19 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.89);
     
 }
 
+/*
 main section a{
     transition: 1s;
 }
+
 
 main section a:hover {
     width: 20em;
     transition: 1s;
 }
+
+main section a:focus {
+        width: 20em;
+
+}
+*/
